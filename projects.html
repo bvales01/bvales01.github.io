@@ -7,35 +7,26 @@
         <link rel="stylesheet" href="css/projects.css" />
     </head>
     <body>
-        <div class="container">
-            <div class="header">
-                <h1>My Projects</h1>
-                <p class="contact">
-                    <a href="resume.html">Back to Resume</a>
-                </p>
-            </div>
+        <nav>
+            <a href="index.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html" class="active">Projects</a>
+        </nav>
 
-            <div class="section">
-                <h2>Projects</h2>
-            </div>
+        <header>
+            <h1>Open Source Projects</h1>
+            <p>Fetched directly from my GitHub API</p>
+        </header>
 
-            <div class="item">
-                <h3>correct-the-html</h3>
-                <p>In this project, I updated the tags inside index.html. Focused on HTML semantic tag structures.</p>
-            </div>
+        <main id="repo-container">
+            <div class="Loading">Loading repositories...</div>
+        </main>
 
-            <div class="item">
-                <h3>webdev-task-001</h3>
-                <p>A buit site for a web development vocabularly list. Introducing inline CSS styles to HTML.</p>
-            </div>
-
-            <div class="item">
-                <h3>Project-of-Choice</h3>
-                <p>I built a hide and show password site. I chose this project because it introduced me to basic levels JavaScript and how to encroporate input/buttons.</p>
-            </div>
-        </div>
+        <script src="script.js"></script>
     </body>
 </html>
+
+
 
 
 

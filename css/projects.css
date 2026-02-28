@@ -20,6 +20,7 @@ body {
         }
         .header {
             text-align: center;
+            padding: 2rem 1rem;
         }
         .header h1 {
             margin: 10px 0;
@@ -64,3 +65,54 @@ body {
             margin: 5px 5px 5px 0;
             border-radius: 4px;
         }
+
+        nav {
+            background: #cf9dde;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+        }
+
+        nav a.active {
+            color: #0366d6;
+        }
+
+#repo-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+}
+
+@media (min-width: 768px) {
+    #repo-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+@media (min-width: 1024px) {
+    #repo-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project-card h3 {
+    color: #0366d6;
+    margin-top: 0;
+}
+
+.project-card .btn {
+    margin-top: auto;
+    display: inline-block;
+    background: #2ea44f;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+}

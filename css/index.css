@@ -1,3 +1,18 @@
+nav {
+            background: #cf9dde;
+            padding: 1rem;
+            text-align: center;
+        }
+
+nav a {
+            color: white;
+            margin: 0 15px;
+        }
+
+        nav a.active {
+            color: #0366d6;
+        }
+
 body {
     display: flex;
     flex-direction: column;
