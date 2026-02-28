@@ -2,7 +2,7 @@ async function loadGitHubRepos() {
     const container = document.getElementById('repo-container');
 
     try {
-        const repsonse = await fetch('https://github.com/bvales01?tab=repositories');
+        const response = await fetch('https://api.github.com/users/bvales01/repos');
         const data = await response.json();
 
         container.innerHTML = '';
@@ -26,3 +26,4 @@ async function loadGitHubRepos() {
     }
 };
 
+loadGitHubRepos();
